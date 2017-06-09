@@ -1,0 +1,24 @@
+'''
+My default PYTHONSTARTUP file. It imports a bunch of libraries
+every time I open the shell to save time when I'm doing something
+quick.
+
+Also sets tab completion for python2 by default.
+'''
+
+import os
+import sys
+import json
+from time import time
+from datetime import datetime
+from pprint import pprint as pp
+from copy import deepcopy
+import tempfile as tf
+
+
+if sys.version_info[0] == 2:
+    import readline
+    import rlcompleter
+    readline.parse_and_bind('tab: complete')
+
+
