@@ -18,6 +18,8 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 alias qq="notepadqq"
+alias tree="tree -C"
+alias less="less -R"
 
 
 ####################################################
