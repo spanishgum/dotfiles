@@ -156,7 +156,7 @@ export PYTHONPATH=~/doms/
 curl http://wttr.in/Moon
 curl http://wttr.in/"Tallahassee, Florida"
 
-
+export MYGIT="https://github.com/spanishgum"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
