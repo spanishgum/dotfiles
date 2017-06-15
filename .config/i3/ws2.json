@@ -1,0 +1,25 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 691,
+       "width": 1229,
+       "x": 0,
+       "y": 0
+    },
+    "name": "Layout saving: programs not getting swallowed : i3wm - Mozilla Firefox",
+    "percent": 1,
+    "swallows": [
+        {
+            "class": "^Firefox$",
+            "instance": "^Navigator$"
+       // "title": "^Layout\\ saving\\:\\ programs\\ not\\ getting\\ swallowed\\ \\:\\ i3wm\\ \\-\\ Mozilla\\ Firefox$",
+       // "transient_for": "^$",
+       // "window_role": "^browser$"
+        }
+    ],
+    "type": "con"
+}
+
