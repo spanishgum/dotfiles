@@ -151,22 +151,43 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
+client.focused              #353439 #9FEE00 #7B9F35
+client.unfocused            #353439 #9FEE00 #7B9F35
+client.focused_inactive     #353439 #9FEE00 #7B9F35
+client.urgent               #353439 #9FEE00 #7B9F35
+focus_follows_mouse yes
+hide_edge_borders both
 bar {
+ colors {
+        background #353439
+        statusline #7B9F35
+        separator #9FEE00
+ 
+        focused_workspace  #353439 #4B4D46 #9FEE00
+        active_workspace   #353439 #4B4D46 #7B9F35
+        inactive_workspace #353439 #4B4D46 #7B9F35
+        urgent_workspace   #353439 #4B4D46 #7B9F35
+    }
+        tray_output none
         status_command i3status
 }
 
 
+# background
+exec --no-startup-id feh --bg-fill /home/spanishgum/Pictures/backgrounds/aesthetic.jpg
+
 # i3 gaps
+for_window [class="^.*"] border pixel 2
 gaps outer 20
 gaps inner 10
 
 
 # Start urxvtd daemon
-exec --no-startup-id /usr/bin/urxvtd -q -f -o &
-sleep 2
+#exec --no-startup-id /usr/bin/urxvtd -q -f -o &
+#sleep 2
 
 # transparency
-exec --no-startup-id compton
+exec --no-startup-id compton --config /home/spanishgum/.compton/compton.conf
 
 
 # restoring layouts
@@ -178,11 +199,13 @@ exec --no-startup-id i3-msg "workspace 4; append_layout /home/spanishgum/.config
 # setting applications for layouts
 #exec_always --no-startup-id i3-msg "workspace 1; exec gnome-terminal --role top -e 'top'"
 exec --no-startup-id i3-msg "workspace 1; exec gnome-terminal --role news -e 'newsbeuter -u /home/spanishgum/.rssfeeds'"
-exec --no-startup-id i3-msg "workspace 1; exec urxvtc -e 'tty-clock -b -c -C 6 -D &"
+#exec --no-startup-id i3-msg "workspace 1; exec urxvtc -e 'tty-clock -b -c -C 6 -D &"
+exec --no-startup-id i3-msg "workspace 1; exec gnome-terminal --role top -e 'top'"
 exec --no-startup-id i3-msg "workspace 1; exec gnome-terminal --role htop -e 'htop'"
 
 exec --no-startup-id i3-msg "workspace 2; exec firefox"
 
-exec --no-startup-id i3-msg "workspace 3; exec code /home/spanishgum/.config/i3/*"
+exec --no-startup-id i3-msg "workspace 3; exec code /home/spanishgum/.config/i3/* /home/spanishgum/.compton/compton.conf"
 
-exec --no-startup-id i3-msg "workspace 1; exec urxvtc -e 'tty-clock -b -c -C 6 -D &"
+#exec --no-startup-id i3-msg "workspace 1; exec urxvtc -e 'tty-clock -b -c -C 6 -D &'"
+exec --no-startup-id i3-msg "workspace 4; exec gnome-terminal --role term"

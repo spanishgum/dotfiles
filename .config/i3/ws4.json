@@ -14,10 +14,10 @@
     "swallows": [
        {
        // "class": "^Gnome\\-terminal$",
-           "instance": "^gnome\\-terminal\\-server$"
+       // "instance": "^gnome\\-terminal\\-server$",
        // "title": "^Terminal$",
        // "transient_for": "^$",
-       // "window_role": "^gnome\\-terminal\\-window\\-2af76a77\\-d064\\-4ab3\\-b116\\-56e13bef9b25$"
+       "window_role": "^term$"
        }
     ],
     "type": "con"
