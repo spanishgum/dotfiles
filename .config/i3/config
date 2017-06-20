@@ -190,6 +190,10 @@ gaps inner 10
 exec --no-startup-id compton --config /home/spanishgum/.compton/compton.conf
 
 
+# Volume control
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 2 +5% && killall -SIGUSR1 i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 2 -5% && killall -SIGUSR1 i3status
+
 # restoring layouts
 exec --no-startup-id i3-msg "workspace 1; append_layout /home/spanishgum/.config/i3/ws1.json"
 exec --no-startup-id i3-msg "workspace 2; append_layout /home/spanishgum/.config/i3/ws2.json"
