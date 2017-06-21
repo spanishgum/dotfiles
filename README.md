@@ -6,6 +6,7 @@ I have streamlined this process of loading my full configuration on a brand new 
 ```bash
 # clone this repo
 git clone http://github.com/spanishgum/dotfiles
+cd dotfiles
 
 # Add ppa repositories found in `.apt-repos`
 # (some dependencies require non standard repos)
