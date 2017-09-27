@@ -1,1 +1,1 @@
-pillow numpy scipy
+pillow requests numpy scipy networkx
