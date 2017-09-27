@@ -1,0 +1,10 @@
+screen -t w0 bash -c 'sudo su -'
+screen -t w1 bash -c 'htop'
+screen -t w2 bash
+select w0
+split -v
+focus right
+select w1
+split
+focus down
+select w2
