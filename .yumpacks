@@ -1,1 +1,1 @@
-epel-release git lynx tree firefox jre gcc gcc-c++ screen cryptopp cryptopp-devel libpcap libpcap-devel SDL_image SDL_image-devel libjpeg* libpng* tk* ssl* sqlite* gdbm* python-devel zlib* dos2unix
+epel-release git lynx tree firefox jre gcc gcc-c++ screen cryptopp cryptopp-devel libpcap libpcap-devel SDL_image SDL_image-devel libjpeg* libpng* tk* ssl* sqlite* gdbm* python-devel zlib* dos2unix gtest gtest-devel
