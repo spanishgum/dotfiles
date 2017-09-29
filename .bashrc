@@ -152,10 +152,6 @@ PS2="$HC$FYEL&gt; $RS"
 export PYTHONSTARTUP=~/.pythonrc
 export PYTHONPATH=~/doms/
 
-# Show moon / weather on terminal startup
-curl http://wttr.in/Moon
-curl http://wttr.in/"Tallahassee, Florida"
-
 export MYGIT="https://github.com/spanishgum"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
