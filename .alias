@@ -1,5 +1,6 @@
 alias moon="curl http://wttr.in/Moon"
 alias weather="curl http://wttr.in/\"Albuquerque, New Mexico\""
+alias po="poweroff"
 
 alias ll="ls -l"
 alias la="ls -al"
