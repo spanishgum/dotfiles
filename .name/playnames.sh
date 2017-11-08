@@ -1,6 +1,6 @@
 IFS=$'\n'
 while true; do
-for f in `find favs -maxdepth 1 -iname '*.art' -type f | shuf`; do
+for f in `find $1 -maxdepth 1 -iname '*.art' -type f | shuf`; do
     fcol=`wc -L $f | awk '{print $1}'`
     frow=`wc -l $f | awk '{print $1}'`
     col=`tput cols`
