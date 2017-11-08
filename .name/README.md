@@ -5,8 +5,8 @@ Ascii art comes from [here](http://patorjk.com/software/taag/).
 #### namefetch.sh
 print to the screen the contents of art.txt, a soft link to an art file.
 
-#### playname.sh
-loop through art/*.art files, printing ones that can fit on the screen, centered.
+#### playname.sh dir
+loop through $1/*.art files, printing ones that can fit on the screen, centered.
 
 #### getart.py
 
