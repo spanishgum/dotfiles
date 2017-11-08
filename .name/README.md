@@ -1,17 +1,20 @@
 ## ASCII art name
-namefetch.sh will grab print to the screen the contents of art.txt,
-which is a soft link to an art file.
 
-playname.sh will loop through all the ascii art name files, but making
-sure to only print ones that can fit on the screen.
+Ascii art comes from [here](http://patorjk.com/software/taag/).
 
-an art file here is any file with the .art extension.
+#### namefetch.sh
+print to the screen the contents of art.txt, a soft link to an art file.
 
-grab your favorited generated art from [here](http://patorjk.com/software/taag/) and copy it to files in this directory.
+#### playname.sh
+loop through art/*.art files, printing ones that can fit on the screen, centered.
 
-getart.py is a python3 script that depends on phantomjs and selenium. It creates an art folder, and downloads every
-available ascii art from the website linked above, given the text specified by the -t flag argument.
-You can get this working like so:
+#### getart.py
 
+`python3 getart.py --verbose --text $USER --dir art`
+
+python3 script that uses phantomjs and selenium. It downloads every ascii art from
+the website linked above, using text specified by the -t flag argument.
+I got this working on Ubuntu 16.04 like so:
   - sudo pip3 install selenium
-  - npm install phantomjs-prebuilt # note if you try to install with apt-get, you will not have all dependencies
+  - npm install phantomjs-prebuilt # apt-get method will not have all dependencies
+  - export PATH=$PATH:/path/to/node_modules/phantomjs-prebuilt/bin
